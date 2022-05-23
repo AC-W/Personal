@@ -1,0 +1,78 @@
+body{
+	background: lavenderblush;
+	font-size: 1.15em;
+	text-align: ;
+	font-family: "Lato","Quicksand", sans-serif;
+}
+
+h3 {
+	color: steelblue;
+}
+
+h3:hover {
+	font-size: larger;
+	color: darkturquoise;
+}
+
+h2 {
+	color: darkblue;
+}
+
+h2:hover {
+	font-size: xx-large;
+	color: black;
+}
+
+.title {
+	text-align: center;
+	background: lightsteelblue;
+	color: black;
+	border: 2px solid steelblue;
+}
+
+.sub-titles {
+	text-align: center;
+	background: lightsteelblue;
+	color: steelblue;
+	border: 2px solid steelblue;
+}
+
+.sub-titles-2 {
+	text-align: left;
+	background: ;
+	color: steelblue;
+	border: 1px solid steelblue;
+}
+
+
+#page-navigation:link{
+	text-decoration: underline;
+	color: darkblue;
+}
+
+#page-navigation:visited{
+	text-decoration: underline;
+	color: steelblue;
+}
+
+#contact-me{
+	color: orangered;
+}
+
+#contact-me:hover{
+	font-size: xx-large;
+	color: hotpink;
+}
+
+article section p {
+	color: darkslategray;
+}
+
+#page-navigation:hover {
+	text-decoration: none;
+	font-size: larger;
+}
+
+img [src*="/Project_Images/"] {
+	border: 10px solid black;
+}
