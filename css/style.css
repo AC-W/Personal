@@ -1,5 +1,5 @@
 body{
-	background: lavenderblush;
+	background: rgba(0, 0, 0, 0.9);
 	font-size: 1.15em;
 	text-align: ;
 	font-family: "Lato","Quicksand", sans-serif;
@@ -25,10 +25,20 @@ h2:hover {
 
 .title {
 	text-align: center;
-	background: lightsteelblue;
-	color: black;
-	border: 2px solid steelblue;
+	background: rgba(0, 0, 0, 0.5);
+	color: rgba(250,250,250, 1.0);
+	transform:translate(0px,70px);
+
+	padding: 10px;
+	border-radius:20px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
+
 
 .sub-titles {
 	text-align: center;
@@ -44,15 +54,22 @@ h2:hover {
 	border: 1px solid steelblue;
 }
 
+#page-navigation{
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
 
 #page-navigation:link{
 	text-decoration: underline;
-	color: darkblue;
+	color: rgba(250,250,250, 0.9);
 }
 
 #page-navigation:visited{
 	text-decoration: underline;
-	color: steelblue;
+	color: rgba(250,250,250, 0.6);
 }
 
 #contact-me{
@@ -75,4 +92,106 @@ article section p {
 
 img [src*="/Project_Images/"] {
 	border: 10px solid black;
+}
+
+.site-layout{
+	width: 100vw;
+	height: 200vh;
+	margin-left: -1vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.containers{
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#homepage{
+	background: url(https://p4.wallpaperbetter.com/wallpaper/687/928/61/neon-4k-8k-hd-wallpaper-preview.jpg);
+}
+
+#about-me{
+	background: rgba(10, 10, 10, 1.0);
+}
+
+#personal-projects{
+	background: rgba(20, 20, 20, 1.0);
+}
+
+#experiences{
+	background: rgba(30, 30, 30, 1.0);
+}
+
+#contact{
+	background: rgba(40, 40, 40, 1.0);
+}
+
+.containers:hover{
+	box-shadow: inset 0 0 0 1000px rgba(250,250,250,0.4);
+	transform: scale(1.1);
+}
+
+.containers:hover .containers-sub-items{
+	opacity: 100%;
+	transform: translateY(-12vh);
+}
+
+.containers:hover .title{
+	opacity: 0%;
+}
+
+.containers-item{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.containers-sub-items{
+	opacity: 0%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: rgba(0, 0, 0, 0.5);
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.text-content{
+	display: none;
+	width: 50vw;
+	opacity: 0%;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#about-me-sub-items:hover .title{
+	opacity: 0%;
+}
+
+#about-me-sub-items:hover .text-content{
+	opacity: 100%;
 }
