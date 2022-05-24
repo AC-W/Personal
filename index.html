@@ -14,108 +14,172 @@
 	</head>
 	<body>
 			<header>
-				<h1 class="title">Ryan Wei's Website</h1> <!-- Main title of the Home Page -->
-				<hr/>
-				<nav>
-					<a href="html/Projects_Directory/Projects_Homepage.html" id="page-navigation"><i><b>Personal Projects</b></i></a>
-				</nav>
+				
 			</header>
-			<hr/>
 
 			<main>
-				<article>
-					<h2 class="sub-titles">Welcome to the Homepage</h2>
-					<section>
-						<p style="color:black;">This website is about Ryan's <big><b>projects</b></big>, <big><b>interests</b></big>, and <big><b> experiences</b></big></p>
-					</section>
-					<section>
-						<p>You can read more about what I have worked on by navaigating to the <a href="html/Projects_Directory/Projects_Homepage.html" id="page-navigation"><b><i>Personal Projects</b></i></a> page or read more about me below</p>
-					</section>
-				</article>
+				<div class="site-layout">
+					<div class="containers" id="homepage" style="flex: 1 1 auto">
+						<div class="containers-item" id="homepage-items" style="order:1;flex:1 1 auto;"><h1 class="title">Homepage</h1></div>
+						<div class="containers-item" id="homepage-items" style="order:2;flex:1 1 auto;">
+							<div class="containers-sub-items" id="homepage-sub-items" style="order:2;flex:1 1 auto;"><a href="#personal-projects" id="page-navigation"><i><b>Personal Projects</b></i></a> </div>
+							<div class="containers-sub-items" id="homepage-sub-items" style="order:1;flex:1 1 auto;"><a href="#about-me" id="page-navigation"><i><b>About Me</b></i></a> </div>
+							<div class="containers-sub-items" id="homepage-sub-items" style="order:4;flex:1 1 auto;"><a href="#contact" id="page-navigation"><i><b>Contact Me</b></i></a> </div>
+							<div class="containers-sub-items" id="homepage-sub-items" style="order:3;flex:1 1 auto;"><a href="#experiences" id="page-navigation"><i><b>My Experiences</b></i></a> </div>
+						</div>
+					</div>
 
-				<article>
-					<section>
-						<h2 class="sub-titles">About me</h2>
-					</section>
-					
-					<section>
-						<p>
-						I am a 3rd year Computer Engineering student studying at the University of Tornoto - St. Geroge Campus pursing a Bachlor of Appliced Science degree with a minor in Artifical Intelligence.
-						<p>
+					<div class="containers" id="about-me" style="flex: 1 1 auto">
+						<div class="containers-item"  id="about-me-items" style="order:1;flex:1 1 auto;"><h1 class="title">About Me</h1></div>
+						<div class="containers-item"  id="about-me-items" style="order:2;flex:1 1 auto;">
+							<div class="containers-sub-items" id="about-me-sub-items" style="order:1;flex:1 1 auto;"><a href="" id="page-navigation">
+								<i><b>Background</b></i></a> 
+								<div class="text-content">
+									I am a 3rd year Computer Engineering student studying at the University of Tornoto - St. Geroge Campus pursing a Bachlor of Appliced Science degree with a minor in Artifical Intelligence.
+								</div>
+							</div>
+							<div class="containers-sub-items" id="about-me-sub-items" style="order:1;flex:1 1 auto;"><a href="" id="page-navigation">
+								<i><b>Interests</b></i></a> 
+								<div class="text-content">
+									In my spare time I enjoy working on personal programming projects and spend time in the outdoors, cycling and hiking. 
+								</div>
+							</div>
+							<div class="containers-sub-items" id="about-me-sub-items" style="order:1;flex:1 1 auto;"><a href="" id="page-navigation">
+								<i><b>Current & Future Plans</b></i></a> 
+								<div class="text-content">
+									Currently I am learning CSS, HTML, and Javascript by developing my own website and learning how to run a website on the internet. 
+									I also have plans to develope mobile games for ios devices to learn the fundamentals of video game development and strengthen my problem solving capabilities.
+								</div>
+							</div>
+						</div>
+					</div>
 
-						<p>
-							In my spare time I enjoy working on personal programming projects and spend time in the outdoors, cycling and hiking. 
-						</p>
+					<div class="containers" id="personal-projects" style="flex: 1 1 auto">
+						<div class="containers-item" style="order:1;flex:1 1 auto;"><h1 class="title">Personal Projects</h1></div>
+						<div class="containers-item" style="order:2;flex:1 1 auto;">
+							<div class="containers-sub-items" style="order:2;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>Machine Learning: Vehicle Model Recognition</b></i></a> </div>
+							<div class="containers-sub-items" style="order:1;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>Website development: Personal Webpage</b></i></a> </div>
+							<div class="containers-sub-items" style="order:4;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>Course Project: Trip planning application</b></i></a> </div>
+						</div>
+					</div>
 
-						<p>
-							Currently I am learning CSS, HTML, and Javascript by developing my own website and learning how to run a website on the internet. 
-							I also have plans to develope mobile games for ios devices to learn the fundamentals of video game development and strengthen my problem solving capabilities.
-						</p>
-					</section>	
-				</article>
+					<div class="containers" id="experiences" style="flex: 1 1 auto">
+						<div class="containers-item" style="order:1;flex:1 1 auto;"><h1 class="title">Experiences</h1></div>
+						<div class="containers-item" style="order:2;flex:1 1 auto;">
+							<div class="containers-sub-items" style="order:2;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>Work Experience</b></i></a> </div>
+							<div class="containers-sub-items" style="order:1;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>School Related Experience</b></i></a> </div>
+							<div class="containers-sub-items" style="order:4;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>Interests and Hobbies</b></i></a> </div>
+						</div>
+					</div>
 
-				<article>
-					<h2 class="sub-titles">My Experiences</h2>
-					<section>
-						<h3 class="sub-titles-2"> Highschool: Science and Engineering Club</h3>
-						<p>  Overcame challenges as a team of 8 using our knowledege of physics and creativity while accounting for our limited budget and competition design constraints.</p>
-					</section>
+					<div class="containers" id = "contact" style="flex: 1 1 auto">
+						<div class="containers-item" style="order:1;flex:1 1 auto;"><h1 class="title">Contact Me</h1></div>
+						<div class="containers-item" id="contect-form" style="order:2;flex:1 1 auto;">
+							<div class="containers-sub-items" style="order:1;flex:1 1 auto;"><a href="" id="page-navigation"><i><b> Contact Form</b></i></a> </div>
+							<div class="containers-sub-items" style="order:2;flex:1 1 auto;"><a href="" id="page-navigation"><i><b>Contact Info</b></i></a> </div>
+							<!--<form>
+								<input type="text" placeholder="Name*" class="form-input" required>
+								<input type="email" placeholder="Email*" class="form-input" required>
+								<input type="phone" placeholder="Phone Number" class="form-input">
+								<textarea placeholder="Enter your message here..."></textarea>
+							</form>
+							<button>Submit</button>
+						-->
+						</div>
+					</div>
+					<!--
+					<article>
+						<section>
+							<h2 class="sub-titles">About me</h2>
+						</section>
+						
+						<section>
+							<p>
+							I am a 3rd year Computer Engineering student studying at the University of Tornoto - St. Geroge Campus pursing a Bachlor of Appliced Science degree with a minor in Artifical Intelligence.
+							<p>
 
-					<section>
-						<h3 class="sub-titles-2"> Highschool: Cross Country Team</h3>
-						<p> Learned the importance of perseverance and sportsmanship through track meets and practices.</p>
-					</section>
+							<p>
+								In my spare time I enjoy working on personal programming projects and spend time in the outdoors, cycling and hiking. 
+							</p>
 
-					<section>
-						<h3 class="sub-titles-2"> Highschool: Bussiness case competitions</h3>
-						<p> Proposed and presented as a team of 4 creative and realstic solutions to real world problems.</p>
-					</section>
+							<p>
+								Currently I am learning CSS, HTML, and Javascript by developing my own website and learning how to run a website on the internet. 
+								I also have plans to develope mobile games for ios devices to learn the fundamentals of video game development and strengthen my problem solving capabilities.
+							</p>
+						</section>	
+					</article>
 
-					<section>
-						<h3 class="sub-titles-2"> UBC Geering Up Engineering Outreach: Junior Instructor </h3>
-						<p> Faciliated and organized STEM-related activities with other engineering students for youth campers.</p>
-					</section>
+					<article>
+						<h2 class="sub-titles">My Experiences</h2>
+						<section>
+							<h3 class="sub-titles-2"> Highschool: Science and Engineering Club</h3>
+							<p>  Overcame challenges as a team of 8 using our knowledege of physics and creativity while accounting for our limited budget and competition design constraints.</p>
+						</section>
 
-					<section>
-						<h3 class="sub-titles-2"> University of Toronto: Machine Learning Club</h3>
-						<p> Learned about new and state of the art Machine Learning methods and concepts.</p>
-					</section>
+						<section>
+							<h3 class="sub-titles-2"> Highschool: Cross Country Team</h3>
+							<p> Learned the importance of perseverance and sportsmanship through track meets and practices.</p>
+						</section>
 
-					<section>
-						<h3 class="sub-titles-2"> University Course: Computer Fundamentals (C langauage)</h3>
-						<p> Created the Reversi Board game and an AI that can play the game at a good level.</p>
-					</section>
+						<section>
+							<h3 class="sub-titles-2"> Highschool: Bussiness case competitions</h3>
+							<p> Proposed and presented as a team of 4 creative and realstic solutions to real world problems.</p>
+						</section>
 
-					<section>
-						<h3 class="sub-titles-2"> University Course: Programming Fundamentals (C++) </h3>
-						<p> Learned about the C++ programming langauage, object oriented programming, basic data structors and algorithms.</p>
-					</section>
+						<section>
+							<h3 class="sub-titles-2"> UBC Geering Up Engineering Outreach: Junior Instructor </h3>
+							<p> Faciliated and organized STEM-related activities with other engineering students for youth campers.</p>
+						</section>
 
-					<section>
-						<h3 class="sub-titles-2"> University Course: Software Communication (C++) </h3>
-						<p> Expanded my knowledge of the C++ programming langauge, more advance data structors and algorithms as well as multi-threading. Cooperated with other developers using Version control (Git).</p>
-					</section>
+						<section>
+							<h3 class="sub-titles-2"> University of Toronto: Machine Learning Club</h3>
+							<p> Learned about new and state of the art Machine Learning methods and concepts.</p>
+						</section>
 
-					<section>
-						<h3 class="sub-titles-2"> University Course: Computer Organization (Assembly and some Verilog)</h3>
-						<p> Understood how higher level codes turns into machine code and how machine code is excercuted by the processor. Learned the ARM assembly language and created a simple processor using verilog. </p>
-					</section>
+						<section>
+							<h3 class="sub-titles-2"> University Course: Computer Fundamentals (C langauage)</h3>
+							<p> Created the Reversi Board game and an AI that can play the game at a good level.</p>
+						</section>
 
-					<section>
-						<h3 class="sub-titles-2"> University Course: Engineering Strateies & Practice</h3>
-						<p> Learned to pitch and communicate engineering idea/solutions to clients and working as a engineering team.</p>
-					</section>
-				</article>
+						<section>
+							<h3 class="sub-titles-2"> University Course: Programming Fundamentals (C++) </h3>
+							<p> Learned about the C++ programming langauage, object oriented programming, basic data structors and algorithms.</p>
+						</section>
+
+						<section>
+							<h3 class="sub-titles-2"> University Course: Software Communication (C++) </h3>
+							<p> Expanded my knowledge of the C++ programming langauge, more advance data structors and algorithms as well as multi-threading. Cooperated with other developers using Version control (Git).</p>
+						</section>
+
+						<section>
+							<h3 class="sub-titles-2"> University Course: Computer Organization (Assembly and some Verilog)</h3>
+							<p> Understood how higher level codes turns into machine code and how machine code is excercuted by the processor. Learned the ARM assembly language and created a simple processor using verilog. </p>
+						</section>
+
+						<section>
+							<h3 class="sub-titles-2"> University Course: Engineering Strateies & Practice</h3>
+							<p> Learned to pitch and communicate engineering idea/solutions to clients and working as a engineering team.</p>
+						</section>
+					</article>
+
+					<article>
+						<h2 class="sub-titles">Contact Me</h2>
+						<form>
+							<input type="text" placeholder="First-Name*" class="form-input">
+							<input type="text" placeholder="Last-Name" class="form-input">
+							<input type="email" placeholder="Email*" class="form-input">
+							<textarea placeholder="Enter your message here..."></textarea>
+						</form>
+						<button>Submit</button>
+					</article>
+				-->
+				</div>
 			</main>
 			<footer>
-				<h2 class="sub-titles">Contact Me</h2>
-				<form>
-					<input type="text" placeholder="First-Name*" class="form-input">
-					<input type="text" placeholder="Last-Name" class="form-input">
-					<input type="email" placeholder="Email*" class="form-input">
-					<textarea placeholder="Enter your message here..."></textarea>
-				</form>
-				<button>Submit</button>
+				<div class="container-Footer" style="flex: 1 1 auto">
+					<div class="container-Footer-item" style="order:1;flex:1 1 auto;"><h1 class="title">Footer-Placeholder</h1></div>
+					</div>
+				</div>
 			</footer>
 	</body>
 </html>
