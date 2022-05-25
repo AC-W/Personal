@@ -98,7 +98,7 @@ img [src*="/Project_Images/"] {
 	width: 99vw;
 	height: 200vh;
 	margin-left: -0.4vw;
-	margin-top: -1.5vh;
+	margin-top: 1vh;
 	margin-bottom:-7.5vh;
 
 	overflow: hidden;
@@ -154,7 +154,7 @@ img [src*="/Project_Images/"] {
 
 .containers:hover .containers-sub-items{
 	opacity: 100%;
-	transform: translateY(-12vh);
+	transform: translateY(-10.2vh);
 }
 
 .containers:hover .title{
@@ -164,32 +164,36 @@ img [src*="/Project_Images/"] {
 .containers-item{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content:safe center;
+	justify-content:center;
 	align-items: center;
 	text-align: center;
 }
 
 .containers-sub-items{
 	opacity: 0%;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 20px;
-	margin-left: 8vw;
-	margin-right: 8vw;
-	background: rgba(0, 0, 0, 0.5);
+	width: 20vw;
+	max-width: 40vw;
+	max-height: 30vh;
+	margin-left: 0.1vw;
+	margin-right: 0.1vw;
+	border-radius: 10px;
+	word-wrap: break-word;
 
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .text-content{
-	display: none;
-	width: 50vw;
 	opacity: 0%;
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
 
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -200,8 +204,11 @@ img [src*="/Project_Images/"] {
 
 #about-me-sub-items:hover .title{
 	opacity: 0%;
+	display: none;
 }
 
 #about-me-sub-items:hover .text-content{
 	opacity: 100%;
+	font-size: 1em;
+	visibility: visible;
 }
