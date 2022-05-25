@@ -95,17 +95,26 @@ img [src*="/Project_Images/"] {
 }
 
 .site-layout{
-	width: 100vw;
+	width: 99vw;
 	height: 200vh;
-	margin-left: -1vw;
+	margin-left: -0.4vw;
+	margin-top: -1.5vh;
+	margin-bottom:-7.5vh;
+
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
 .containers{
-	width: 100%;
+	width: 99vw;
+	height: 20vh;
+	margin-top: 2vh;
 	background-size: cover;
+
+	overflow: hidden;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -155,7 +164,8 @@ img [src*="/Project_Images/"] {
 .containers-item{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content:safe center;
 	align-items: center;
 	text-align: center;
 }
@@ -165,8 +175,8 @@ img [src*="/Project_Images/"] {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 8vw;
+	margin-right: 8vw;
 	background: rgba(0, 0, 0, 0.5);
 
 	-webkit-transition: all 0.5s;
