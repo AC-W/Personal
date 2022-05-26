@@ -1,0 +1,155 @@
+.menu-wrap{
+	font-family: "Lato","Quicksand", sans-serif;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+}
+
+.menu-wrap .toggler{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+	width: 55px;
+	height: 45px;
+	opacity: 0%;
+}
+
+.menu-wrap .hamburger{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 20px;
+	height: 15px;
+	padding: 1rem;
+	background: rgba(250, 250, 250, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-wrap .hamburger > div{
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after{
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	width: 100%;
+	height: 2px;
+	background: inherit;
+}
+
+.menu-wrap .hamburger > div:after{
+	top: 7px;
+}
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div{
+	transform: rotate(135deg);
+}
+
+/* turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after{
+	top: 0;
+	transform: rotate(90deg);
+}
+
+/* rotate on hover when checked*/
+.menu-wrap .toggler:checked:hover + .hamburger > div{
+	transform: rotate(225deg);
+}
+
+/*show menu */
+.menu-wrap .toggler:checked ~ .menu {
+	visibility: visible;
+	transform: translate(0px,-3vh);
+	transform: scale(1);
+
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+	opacity: 1;
+}
+
+.menu-wrap .menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: scale(0);
+	transform: translate(100px,-3vh);
+	overflow: hidden;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.menu-wrap .menu>div {
+	top: 0;
+	right: 0;
+	display: flex;
+	flex: none;
+	align-items: flex-start;
+	justify-content: start;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.menu-wrap .menu >div >div {
+	transform: translateY(-2.1vh);
+	top: 0;
+	text-align: center;
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.menu-wrap .menu >div >div >ul >li{
+	list-style: none;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+.menu-wrap .menu >div >div >ul >li > a{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
