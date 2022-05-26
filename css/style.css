@@ -60,15 +60,14 @@ h2:hover {
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
+	text-decoration: underline;
 }
 
 #page-navigation:link{
-	text-decoration: underline;
 	color: rgba(250,250,250, 0.9);
 }
 
 #page-navigation:visited{
-	text-decoration: underline;
 	color: rgba(250,250,250, 0.6);
 }
 
@@ -98,7 +97,7 @@ img [src*="/Project_Images/"] {
 	width: 99vw;
 	height: 200vh;
 	margin-left: -0.4vw;
-	margin-top: 1vh;
+	margin-top: 1.1vh;
 	margin-bottom:-7.5vh;
 
 	overflow: hidden;
@@ -153,6 +152,7 @@ img [src*="/Project_Images/"] {
 }
 
 .containers:hover .containers-sub-items{
+	font-size: initial;
 	opacity: 100%;
 	transform: translateY(-10.2vh);
 }
@@ -167,9 +167,11 @@ img [src*="/Project_Images/"] {
 	justify-content:center;
 	align-items: center;
 	text-align: center;
+
 }
 
 .containers-sub-items{
+	font-size: 0;
 	opacity: 0%;
 	width: 20vw;
 	max-width: 40vw;
@@ -179,11 +181,11 @@ img [src*="/Project_Images/"] {
 	border-radius: 10px;
 	word-wrap: break-word;
 
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 
 	background: rgba(0, 0, 0, 0.5);
 }
@@ -211,4 +213,47 @@ img [src*="/Project_Images/"] {
 	opacity: 100%;
 	font-size: 1em;
 	visibility: visible;
+}
+
+.navigation-bar{
+	z-index: 1;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+}
+
+.navigation-bar .hover-text{
+	visibility: hidden;
+	font-size: 0;
+}
+
+.navigation-bar-items{
+	width: 23px;
+	height: 23px;
+	margin-left: 0.3vw;
+	margin-right: 0.3vw;
+	object-fit: scale-down;
+	background-position:center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.navigation-bar-items:hover{
+	border-radius: 10px;
+	border: solid;
+	border-color: white;
+	transition: scale(1.5);
+}
+
+.navigation-bar-items:hover .hover-text{
+	visibility: visible;
+	font-size: 1em;
 }
