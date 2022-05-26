@@ -159,8 +159,8 @@ img [src*="/Project_Images/"] {
 }
 
 .containers:hover .title{
-	opacity: 0%;
-	transform: scale(0);
+	opacity: 100%;
+	transform: scale(1);
 }
 
 .containers-item{
