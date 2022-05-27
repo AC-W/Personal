@@ -1,3 +1,18 @@
+@keyframes on-load{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+		transform: translateX(0px);
+	}
+}
+
+main {
+	animation: 1s ease-in-out 0s 1 on-load;
+}
+
 body{
 	background: rgba(0, 0, 0, 0.9);
 	font-size: 1.15em;
@@ -5,7 +20,25 @@ body{
 	font-family: "Lato","Quicksand", sans-serif;
 }
 
+h1{	
+	animation: 1s ease-in-out 0s 1 on-load;
+	width: 99vw;
+	padding-top: 3vh;
+	height: 8vh;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.about-me-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 h3 {
+	animation: 1s ease-in-out 0s 1 on-load;
 	color: steelblue;
 }
 
@@ -15,6 +48,7 @@ h3:hover {
 }
 
 h2 {
+	animation: 1s ease-in-out 0s 1 on-load;
 	color: darkblue;
 }
 
@@ -253,4 +287,8 @@ img [src*="/Project_Images/"] {
 	border: solid;
 	border-color: white;
 	transition: scale(1.5);
+}
+
+#homepage-icon{
+	transition: scale(2);
 }
