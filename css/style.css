@@ -9,6 +9,10 @@
 		justify-content: center;
 		background: white;
 	}
+
+	#main-title{
+		grid-column: 1/6;
+	}
 }
 
 @keyframes on-load{
@@ -241,7 +245,6 @@ img [src*="/Project_Images/"] {
 	justify-content:center;
 	align-items: center;
 	text-align: center;
-
 }
 
 .containers-sub-items{
