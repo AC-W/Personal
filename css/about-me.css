@@ -1,5 +1,7 @@
 body{
-	color: rgba(250, 250, 250, 0.9);
+	animation: 1s ease-in-out 0s 1 on-load;
+	overflow-x: hidden;
+	color: rgba(250, 250,250, 0.9);
 }
 
 .about-me-page{
@@ -44,4 +46,86 @@ p{
 
 .emphasize:hover {
 	font-size: 1.4rem;
+}
+
+.background-containter{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+	align-items: center;
+}
+
+.background-info-table{
+	justify-content: start;
+	align-items: baseline;
+	text-align: left;
+	list-style: none;
+	min-height: 10vh;
+}	
+
+.background-containter figure{
+	text-align: center;
+}
+
+.background-image{
+	border-radius: 3vw;
+	width: 10vw;
+	height: 10vw;
+}
+
+.background-content{
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.background-content:hover{
+	transform: scale(1.1);
+	border: solid;
+	border-radius: 2vw;
+	border-color:white ;
+}
+
+.skills-table{
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+}
+
+.skills-table-content{
+	background: rgba(250, 250, 250, 0.1);
+	padding: 1vw;
+	border-radius: 3vw;
+	text-align: center;
+	font-style: oblique;
+	font-weight: bolder;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.skills-table-content:hover{
+	transform: scale(1.1);
+	border: solid;
+	border-color:white ;
+}
+
+@media screen and (min-width: 490px){
+	.skills-table{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 1vw;
+		grid-row-gap: 1vw;
+		align-items: center;
+		overflow-x: visible;
+	}
+
+	.background-containter{
+		display: grid;
+		grid-template-columns: 30vw 30vw;
+		align-items: center;
+	}
 }
