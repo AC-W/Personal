@@ -2,7 +2,7 @@
 @media screen and (min-width: 490px){
 	.top-nav-bar{
 		display: grid;
-		grid-template-columns: 10vw 10vw 10vw 10vw;
+		grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
 		grid-template-rows: auto auto;
 		grid-column-gap: 2vw;
 		align-items: center;
@@ -48,8 +48,6 @@ h1{
 
 .about-me-page{
 	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 h3 {
