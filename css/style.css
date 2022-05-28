@@ -7,7 +7,6 @@
 		grid-column-gap: 2vw;
 		align-items: center;
 		justify-content: center;
-		background: white;
 	}
 
 	#main-title{
@@ -178,8 +177,8 @@ img [src*="/Project_Images/"] {
 }
 
 #homepage{
-	background-color: indianred;
-	//background-image: url(https://c4.wallpaperflare.com/wallpaper/1020/126/373/street-the-building-watch-canada-wallpaper-preview.jpg);
+	background-color: lightgray;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/1020/126/373/street-the-building-watch-canada-wallpaper-preview.jpg);
 	background-position: left;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -187,8 +186,8 @@ img [src*="/Project_Images/"] {
 }
 
 #about-me{
-	background-color: lightsteelblue;
-	//background-image: url(https://c4.wallpaperflare.com/wallpaper/193/562/539/the-city-canada-vancouver-wallpaper-preview.jpg);
+	background-color: lightslategray;
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/193/562/539/the-city-canada-vancouver-wallpaper-preview.jpg);
 	background-position: right;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -196,8 +195,8 @@ img [src*="/Project_Images/"] {
 }
 
 #personal-projects{
-	background-color: indianred;
-	//background-image: url(https://images7.alphacoders.com/456/thumb-1920-456555.jpg);
+	background-color: blanchedalmond;
+	background-image: url(https://images7.alphacoders.com/456/thumb-1920-456555.jpg);
 	background-position: left;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -205,8 +204,8 @@ img [src*="/Project_Images/"] {
 }
 
 #experiences{
-	background-color: lightsteelblue;
-	//background-image: url(https://wallpaperaccess.com/full/359586.jpg);
+	background-color: slategrey;
+	background-image: url(https://wallpaperaccess.com/full/359586.jpg);
 	background-position: right;
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -215,8 +214,8 @@ img [src*="/Project_Images/"] {
 }
 
 #contact{
-	background-color: indianred;
-	//background-image: url(https://images3.alphacoders.com/109/1090280.jpg);
+	background-color: lightgray;
+	background-image: url(https://images3.alphacoders.com/109/1090280.jpg);
 	background-position: left;
 	background-size:contain;
 	background-repeat:no-repeat;
