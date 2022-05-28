@@ -177,7 +177,7 @@ img [src*="/Project_Images/"] {
 }
 
 #homepage{
-	background-color: lightgray;
+	background-color: rgba(0, 0, 0, 0.8);
 	background-image: url(https://c4.wallpaperflare.com/wallpaper/1020/126/373/street-the-building-watch-canada-wallpaper-preview.jpg);
 	background-position: left;
 	background-size:contain;
@@ -186,7 +186,7 @@ img [src*="/Project_Images/"] {
 }
 
 #about-me{
-	background-color: lightslategray;
+	background-color: rgba(0, 0, 0, 0.8);
 	background-image: url(https://c4.wallpaperflare.com/wallpaper/193/562/539/the-city-canada-vancouver-wallpaper-preview.jpg);
 	background-position: right;
 	background-size:contain;
@@ -195,7 +195,7 @@ img [src*="/Project_Images/"] {
 }
 
 #personal-projects{
-	background-color: blanchedalmond;
+	background-color: rgba(0, 0, 0, 0.8);
 	background-image: url(https://images7.alphacoders.com/456/thumb-1920-456555.jpg);
 	background-position: left;
 	background-size:contain;
@@ -204,7 +204,7 @@ img [src*="/Project_Images/"] {
 }
 
 #experiences{
-	background-color: slategrey;
+	background-color: rgba(0, 0, 0, 0.8);
 	background-image: url(https://wallpaperaccess.com/full/359586.jpg);
 	background-position: right;
 	background-size:contain;
@@ -214,7 +214,7 @@ img [src*="/Project_Images/"] {
 }
 
 #contact{
-	background-color: lightgray;
+	background-color: rgba(0, 0, 0, 0.8);
 	background-image: url(https://images3.alphacoders.com/109/1090280.jpg);
 	background-position: left;
 	background-size:contain;
