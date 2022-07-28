@@ -19,7 +19,7 @@
 	justify-content: center;
 }
 
-form{
+.contact-form{
 	background: white;
 	display: flex;
 	flex-direction:column;
@@ -29,11 +29,11 @@ form{
 	border-radius: 10px;
 }
 
-form h3{
+.contact-form h3{
 	font-weight: 800;
 }
 
-form input, form textarea{
+.contact-form input, .contact-form textarea{
 	border: 0;
 	margin: 10px 0;
 	padding: 20px;
@@ -42,7 +42,7 @@ form input, form textarea{
 	font-size: 1rem;
 }
 
-form button{
+.contact-form button{
 	padding: 15px;
 	background: #ff5361;
 	color: white;

@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/hamburger.css">
 		<link rel="stylesheet" type="text/css" href="../css/about-me.css">
 		<link rel="stylesheet" type="text/css" href="../css/contact.css">
+		<script type="text/javascript" src="../js/emailJS.js"></script>
 		<title>Ryan Wei's Website</title>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,6 +22,14 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-HJ37TEP1QV');
+		</script>
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+		</script>
+		<script type="text/javascript">
+		(function(){
+			emailjs.init("S_-mPh58U_khUfyUJ");
+		})();
 		</script>
 	</head>
 		<body>
@@ -93,16 +102,15 @@
 				</div>
 			</div>
 			
-			<h2>Contact form (Work in progress)</h2>
+			<h2>Contact form</h2>
 			<div class="contact-form-container">
-				<form method="post">
+				<div class="contact-form">
 					<h3>Contact Me</h3>
 					<input type="text" id="name" placeholder="Enter Your name" required>
 					<input type="email" id="email" placeholder="Email" required>
-					<input type="text" id="phone-number" placeholder="Phone No." required>
 					<textarea id="message" rows="4" placeholder="Enter Your Message"></textarea>
-					<button type="submit">Send Message</button>
-				</form>
+					<button onclick="SendMail()">Send Message</button>
+				</div>
 			</div>
 		</body>
 	</html>
